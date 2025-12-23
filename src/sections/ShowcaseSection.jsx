@@ -50,15 +50,14 @@ const AppShowcase = () => {
             <div ref={rydeRef} className="first-project-wrapper">
               <div className="image-wrapper overflow-hidden rounded-xl bg-black-200">
                 <img
-                    src="/images/deividas-strole-lawander-blue.png"
+
+                    src="/images/deividas-strole-yeah-sc.png"
                     alt="LaWander - AI Travel Planner"
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-cover"
                 />
               </div>
               <div className="text-content">
-                <h2>
-                  LaWander - AI Travel Planner
-                </h2>
+                <h2>Y.E.A.H. - AI-Powered Customer Service Agent</h2>
                 <p className="text-white-50 md:text-xl">
                   An app built with Java and React for a fast, user-friendly experience.
                 </p>
@@ -69,16 +68,21 @@ const AppShowcase = () => {
               <div className="project" ref={libraryRef}>
                 <div className="image-wrapper bg-black-200">
                   <img
-                      src="/images/deividas-strole-yeah.png"
+                      src="/images/deividas-strole-lawander-sc.png"
                       alt="Library Management Platform"
+                      className="w-full h-full object-cover"
                   />
                 </div>
-                <h2>Y.E.A.H. - AI-Powered Customer Service Bot For Educational Institutions</h2>
+                <h2>LaWander - AI Travel Planner</h2>
               </div>
 
               <div className="project" ref={ycDirectoryRef}>
                 <div className="image-wrapper bg-black-200">
-                  <img src="/images/deividas-strole-vpnhead.png" alt="YC Directory App" />
+                  <img
+                      src="/images/deividas-strole-vpnhead-sc.png"
+                      alt="YC Directory App"
+                      className="w-full h-full object-cover"
+                  />
                 </div>
                 <h2>vpnHead - Portal for VPN Services and Information</h2>
               </div>
