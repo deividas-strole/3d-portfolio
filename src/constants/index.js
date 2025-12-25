@@ -152,13 +152,15 @@ const techStackIcons = [
     name: "JavaScript Developer",
     modelPath: "/models/node-transformed.glb",
     scale: 5,
+    // rotation: [0, 0, 0],
+
     rotation: [0, -Math.PI / 2, 0],
   },
   {
-    name: "SQL",
+    name: "SQL Developer",
     modelPath: "/models/sql.glb",
     scale: 5,
-    rotation: [0, 0, 0],
+    rotation: [0, -Math.PI / 2, 0],
   },
   // {
   //   name: "Project Manager",
