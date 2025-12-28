@@ -58,9 +58,9 @@ const AppShowcase = () => {
               </div>
               <div className="text-content">
                 <h2>Y.E.A.H. - AI-Powered Customer Service Agent</h2>
-                {/*<p className="text-white-50 md:text-xl">*/}
-                {/*  An app built with Java and React.  /!*for a fast, user-friendly experience.*!/*/}
-                {/*</p>*/}
+                <p className="text-white-50 md:text-xl">
+                  Java, Spring Boot, React, MySQL, AWS  {/*An app built with Java and React for a fast, user-friendly experience.*/}
+                </p>
               </div>
             </div>
 
@@ -74,9 +74,9 @@ const AppShowcase = () => {
                   />
                 </div>
                 <h2>LaWander - AI Travel Planner</h2>
-                {/*<p className="text-white-50 md:text-xl">*/}
-                {/*  An app built with Java and React.*/}
-                {/*</p>*/}
+                <p className="text-white-50 md:text-xl">
+                  Java, Spring Boot, React, MySQL, AWS
+                </p>
               </div>
 
               <div className="project" ref={ycDirectoryRef}>
@@ -88,9 +88,9 @@ const AppShowcase = () => {
                   />
                 </div>
                 <h2>vpnHead - Portal for VPN Services and Information</h2>
-                {/*<p className="text-white-50 md:text-xl">*/}
-                {/*  An app built with Java and React.*/}
-                {/*</p>*/}
+                <p className="text-white-50 md:text-xl">
+                  Java, Spring Boot, React, MySQL, AWS
+                </p>
               </div>
             </div>
           </div>
