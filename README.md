@@ -7,7 +7,7 @@ Built with performance, clarity, and responsiveness in mind, this portfolio high
 ---
 
 ## 🚀 View Live Site
-**https://deividas-strole.github.io**
+**https://deividasstrole.com**
 
 ---
 
