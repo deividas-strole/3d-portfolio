@@ -38,10 +38,18 @@ const words = [
 // ];
 
 const counterItems = [
-  { label: "M.S. in Software Engineering" },
-  { label: "B.S. in Computer Science" },
-  { label: "B.S. in Informatics" },
-  { label: "ML/AI (Python) Certification" },
+  { label: "M.S. Software Engineering",
+    school: "National University"
+  },
+  { label: "B.S. in Computer Science",
+    school: "Cal State University Northridge"
+  },
+  { label: "B.S. in Informatics",
+    school: "Vytautas Magnus University"
+  },
+  { label: "ML/AI Certification",
+    school: "Harvard University"
+  },
 ];
 
 const logoIconsList = [
