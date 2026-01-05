@@ -488,3 +488,12 @@ section {
 .animate-slide-in {
   animation: slide-in 0.3s ease-out;
 }
+
+/*added for 3d spinning figure in Contacts*/
+canvas {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  background-color: #000000 !important;
+}
+/*added for 3d spinning figure in Contacts*/
