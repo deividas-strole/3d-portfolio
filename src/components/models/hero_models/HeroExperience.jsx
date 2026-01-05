@@ -23,6 +23,8 @@ const HeroExperience = () => {
         minDistance={5} // Minimum distance for zooming in
         minPolarAngle={Math.PI / 5} // Minimum angle for vertical rotation
         maxPolarAngle={Math.PI / 2} // Maximum angle for vertical rotation
+        autoRotate={true} // Enable auto-rotation
+        autoRotateSpeed={1.0} // Speed of rotation (adjust to your preference)
       />
 
       <Suspense fallback={null}>
