@@ -1,5 +1,7 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { useRef, useState, useEffect } from "react";
+
 
 import TitleHeader from "../components/TitleHeader";
 import Floating3DModel from "../components/models/Floating3DModel";
@@ -40,6 +42,20 @@ const Contact = () => {
     email: "",
     message: "",
   });
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
 
   const showNotification = (message, type = "success") => {
     setToastMessage(message);
@@ -141,11 +157,14 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="xl:col-span-7" style={{ minHeight: "600px" }}>
-              <div className="w-full h-[600px] rounded-3xl overflow-hidden bg-black">
-                <Floating3DModel />
-              </div>
-            </div>
+            {!isMobile && (
+                <div className="xl:col-span-7" style={{ minHeight: "600px" }}>
+                  <div className="w-full h-[600px] rounded-3xl overflow-hidden bg-black">
+                    <Floating3DModel />
+                  </div>
+                </div>
+            )}
+
           </div>
         </div>
       </section>
