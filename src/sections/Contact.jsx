@@ -150,8 +150,35 @@ const Contact = () => {
                   </div>
 
                   <button type="submit" disabled={loading || messageSent}>
-                    {loading ? "Sending..." : messageSent ? "Sent ✓" : "Send"}
+                    <div
+                        className={`cta-button group transition-all duration-300 ${
+                            messageSent ? "opacity-90" : ""
+                        }`}
+                    >
+                      <div
+                          className={`bg-circle transition-colors duration-300 ${
+                              messageSent ? "!bg-green-500" : ""
+                          }`}
+                      />
+                      <p className="text">
+                        {loading
+                            ? "Sending..."
+                            : messageSent
+                                ? "Sent ✓"
+                                : "Send"}
+                      </p>
+                      {!messageSent && (
+                          <div className="arrow-wrapper">
+                            <img src="/images/arrow-down.svg" alt="arrow" />
+                          </div>
+                      )}
+                    </div>
                   </button>
+
+                  {/*<button type="submit" disabled={loading || messageSent}>*/}
+                  {/*  {loading ? "Sending..." : messageSent ? "Sent ✓" : "Send"}*/}
+                  {/*</button>*/}
+
                 </form>
               </div>
             </div>
